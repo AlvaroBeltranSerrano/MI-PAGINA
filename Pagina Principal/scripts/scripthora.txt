@@ -1,0 +1,40 @@
+<div>
+<form>
+    <div>
+        <label>Fecha de Ingreso</label>
+        <input type="textbox" id="FechaDateTime" value="" />
+    </div>
+
+    <div>
+        <label>Fecha de Salida</label>
+        <input type="date" class="form-control" placeholder="Fecha de salida" />
+    </div>
+
+</form>
+</div>
+<script type="text/javascript">
+    var Fecha = new Date();
+    var Ano = Fecha.getFullYear();
+    var Mes = Fecha.getMonth();
+    Mes++;
+    var Dia = Fecha.getDate();
+    var Hora = Fecha.getHours();
+    var Minuto = Fecha.getMinutes();
+    var Segundo = Fecha.getSeconds();
+    document.getElementById("FechaDateTime").value = Dia + "-" + Mes + "-" + Ano + " " + Hora + ":" + Minuto + ":" + Segundo; 
+</script> 
+
+
+
+
+
+
+		<h1>Lista Anidada <h1/> <hr>
+		<h2>Modulos Asir <h2/>
+		<ol>
+			<li><b>Lenguaje de Marcas<b/> 
+			<ul> <li>HTML</li> <li>XHTML<li/> <ul/> <li/>
+			<li><b>Bases de datos<b/> 
+			<ul> <li>Modelos de bases de datos<li/> <li>Diseño fisico de bases de datos<li/> <ul/> <li/>
+			<li> <b>Implantacion Sistemas Operativos<b/> 
+			<ul> <li>Instalacion sistemas operativos<li/> <li>Maquinas Virtuales<li/> <ul/> <li/>

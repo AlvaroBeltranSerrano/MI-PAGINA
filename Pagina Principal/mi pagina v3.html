@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+	<script type="text/javascript">
+		var Fecha = new Date();
+		var Ano = Fecha.getFullYear();
+		var Mes = Fecha.getMonth();
+		Mes++;
+		var Dia = Fecha.getDate();
+		var Hora = Fecha.getHours();
+		var Minuto = Fecha.getMinutes();
+		var Segundo = Fecha.getSeconds();
+		document.getElementById("FechaDateTime").value = Dia + "-" + Mes + "-" + Ano + " " + Hora + ":" + Minuto + ":" + Segundo; 
+	</script>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="imagenes/Fotogato.ico">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8 ">
+		<meta name="date" content="27 de septiembre de 2025">
+		<meta name="generator" content="Notepad++">
+		<meta name="description" content="Una pagina web de pruevas creada por Alvaro Beltran Serrano">
+		<meta name="distribution" content="local">
+		<meta name="keywords" content="Practica, Prueva, Iniciacion">
+		<meta name="locality" content="Madrid, España">
+		<meta http-equiv="Page-Enter" content="blendTrans (duration=20)">
+		<meta http-equiv="Page-Exit" content="revealTrans (duration=1.5,transition=20">
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<!--aqui empieza el body del documento -->
+	<body style="background-color: purple">
+		<div id="footer" style="background-color: blue">
+				<p> Informacion de contacto <p>
+		</div>
+		
+		<fieldset>
+			<legend>Formulario de Registro</legend>
+		<form name="registro" action="paginas/manejador.html" method="post">
+			ID:<input type="text" name="Usuario" value="Usuario 1"readonly> <br> 
+				<fieldset>
+					Usuario:<input type="text" name="Usuario" value="username"> <br> 
+					Contraseña:<input type="password" name="Contraseña"> <br> 
+					Socio:<input type="checkbox" name="socio" checked="true">Socio <br> 
+					
+					Sexo:<input type="radio" name="sexo">Male 
+						 <input type="radio" name="sexo">Female
+						 <input type="radio" name="sexo">Otro 
+						 <input type="radio" name="sexo">No se no tengo<br> 
+						 
+					Tema:<input type="checkbox" name="temas" value="ac">Acción	
+						 <input type="checkbox" name="temas" value="hi">Historia 
+						 <input type="checkbox" name="temas" value="Fu">Furbol <br>
+				</fieldset>	 
+				<fieldset>
+					<Legend>Novedades HTML5</Legend>
+					<input type="range">
+					<input type="date">
+					<audio src="audios/portazo.mp3" autoplay controls>
+									
+				<fieldset>
+					Fichero:<input type="file" name="foto personal"> <br>
+				</fieldset>	
+				
+				<!--valor oculto--><input type="hidden" name="oculto" >
+				
+				<fieldset>
+					Equipo:<select size="8" multiple="true"> 
+							<optgroup label="Los buenos">
+								<option value="Madrid">Real madrid</option>
+								<option value="Rayito">Rayito</option>
+								<option value="Betis">Beti</option>
+							</optgroup>
+							
+							<optgroup label="Los Malos">
+								<option value="Barsa">Barsa</option>
+								<option value="Atletico">Atletico</option>
+								<option value="Girona">Girona</option>
+						</select> <br>
+				</fieldset>
+				
+				<fieldset>
+					Comentario:<textarea name="comentario" rows="5" cols="30"> </textarea> <br>
+				
+					<!--Boton de enviar--> <input type="submit" value="enviar">
+					<!--Otra forma--><button type="submit"> enviar con button </button>
+						<button type="submit"> 
+							<img src="imagenes/avion.png" width="30" height="30">
+						</button> 
+				</fieldset>
+			</fieldset>
+		</form>
+		</fieldset>
+		<h1>Indice</h1>
+			<ul>
+				<li> <a href="#L">Lista anidada</a> </li>
+				<li> <a href="#D">Diccionario Lenguaje de Marcas</a> </li>
+				<li> <a href="paginas/Paginadehipervinculos.html#P">Pagina Hipervinculo</a> </li>
+				<li> <a href="https://www.youtube.com/watch?v=FPsFRFn3dOE">Video Gracioso</a> </li>
+				<li> <a href="https://www.pccomponentes.com/?srsltid=AfmBOopV3INvMLaM4tK9vJF-fVsOijj7LrRL2GxDp0SMknxRYMLM5FMz">Tienda amiga</a> </li>
+			</ul>
+		<a name="L"> <a/> 
+		<h1>Listas Anidadas </h1> <hr>
+			<h2>Asignaturas Asir</h2>
+				<ol>
+					<li><b>Lenguaje de Marcas</b> 
+						<ul> <li>HTML</li> <li>XHTML</li> </ul> </li>
+					<li><b>Bases de datos</b> 
+						<ul> <li>Modelos de bases de datos<li/> <li>Diseño fisico de bases de datos</li> </ul> </li>
+					<li> <b>Implantacion Sistemas Operativos</b> 
+						<ul> <li>Instalacion sistemas operativos</li> <li>Maquinas Virtuales</li> </ul> </li>
+				</ol>
+		<a name="D">  
+		<h1>Diccionario Lenguaje de Marcas</h1>
+			<dl>	
+				<dt>ACE</dt> <dd>Access Control Entry</dd>
+				<dt>DBMS</dt> <dd>Data Base Management System</dd>
+				<dt>GEEK</dt> <dd>Persona apasionada por la tecnología</dd>
+				<dt>IDE</dt> <dd>Integrated Development Environmen</dd> <dd>Integrated Drive Electronics</dd>
+				<dt>NERD</dt> <dd>Persona con gran inteligencia y un interés intenso en temas académicos o especializados</dd> <dd>a menudo acompañado de una socialización limitada y un carácter introspectivo</dd>
+				<dt>NERF</dt> <dd>Neural Radiance Fields</dd>
+				<dt>Owned</dt> <dd>Del inglés "poseer"</dd>
+				<dt>P2P</dt> <dd>Peer-to-Peer</dd>
+				<dt>RAID</dt> <dd>Redundant Array of Independent Disks</dd>
+				<dt>URI</dt> <dd>Uniform Resource Identifier</dd>
+			</dl>
+		<img src="imagenes/Fotogato.ico" width="315" height="315"> 
+		<table border="2" cellspacing="20" cellpadding="10" width="300" style="background-color: #D1EDB3" >
+			<tr>
+				<td>
+					<p>Esto es la celda uno</p>
+				<td>
+					<p>Esto es la celda dos</p>
+			</tr>
+			<tr>
+				<td>
+					<p>Esto es la celda tres</p>
+				<td>
+					<p>Esto es la celda cuatro</p>
+			</tr>
+		</table>
+		<p> Doraimon en Catalan </p>
+		 <object type="video/mp4" id="Doraimon" width="300" height="200" data="Videos/Doraimon.mp4">
+			<param name="Doraimon" value="Videos/Doraimon.mp4">
+			<param name="quality" value="high">
+		</object>
+		<p> Doraimon en euskera </p>
+		<object type="video/mp4" id="Doraimoneus" width="300" height="200" data="Videos/Doraimoneus.mp4">
+			<param name="Doraimonetarra" value="Videos/Doraimoneus.mp4">
+			<param name="quality" value="high">
+		</object>
+
+		<h2>Un video de YouTube en portugues</h2>
+			<object type="application/x-shockwave-flash"
+			data="https://youtu.be/Ysbr4JzG6aQ?si=hIyh8rKRI7v7IKm8"
+			width=425 height=350>
+			</object>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/6oHYgG5DFSM?si=RHOVA67igVBdPEni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				
+
+		
+	</body>
+	
+		
